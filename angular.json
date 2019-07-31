@@ -109,9 +109,10 @@
       "prefix": "",
       "architect": {
         "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
+          "builder": "@nrwl/builders:cypress",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
+            "cypressConfig": "e2e/cypress.json",
+            "tsConfig": "e2e/tsconfig.e2e.json",
             "devServerTarget": "try-co-it-v7:serve"
           },
           "configurations": {
